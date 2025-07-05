@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { FiGithub, FiExternalLink, FiCode } from 'react-icons/fi';
