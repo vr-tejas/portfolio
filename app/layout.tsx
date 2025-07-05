@@ -59,12 +59,12 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "VR Tejas - Portfolio",
+  title: "V R Tejas - Portfolio",
   description: "Full Stack Developer & UI/UX Designer",
-  keywords: ["VR Tejas", "Portfolio", "Full Stack Developer", "UI/UX Designer", "React", "Next.js"],
-  authors: [{ name: "VR Tejas" }],
-  creator: "VR Tejas",
-  publisher: "VR Tejas",
+  keywords: ["V R Tejas", "Portfolio", "Full Stack Developer", "UI/UX Designer", "React", "Next.js"],
+  authors: [{ name: "V R Tejas" }],
+  creator: "V R Tejas",
+  publisher: "V R Tejas",
   formatDetection: {
     email: false,
     address: false,
@@ -75,16 +75,16 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "VR Tejas - Portfolio",
+    title: "V R Tejas - Portfolio",
     description: "Full Stack Developer & UI/UX Designer",
     url: "https://vrtejas.vercel.app",
-    siteName: "VR Tejas Portfolio",
+    siteName: "V R Tejas Portfolio",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "VR Tejas - Portfolio",
+    title: "V R Tejas - Portfolio",
     description: "Full Stack Developer & UI/UX Designer",
     creator: "@vrtejas",
   },
@@ -112,7 +112,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${playfairDisplay.variable} ${crimsonText.variable} ${cormorantGaramond.variable} ${libreBaskerville.variable} ${merriweather.variable} ${firaCode.variable} ${jetbrainsMono.variable} scroll-smooth`}>
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/profile.jpg" />
+        <link rel="apple-touch-icon" href="/profile.jpg" />
         <meta name="theme-color" content="#000000" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
