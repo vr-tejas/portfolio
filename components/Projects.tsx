@@ -15,7 +15,7 @@ import { TbBrandCSharp } from 'react-icons/tb';
 const Projects = () => {
 
   // Tech icon mapping with consistent white color
-  const techIcons: { [key: string]: JSX.Element } = {
+  const techIcons: { [key: string]: React.ReactElement } = {
     'React': <SiReact className="text-foreground" size={16} />,
     'Next.js': <SiNextdotjs className="text-foreground" size={16} />,
     'JavaScript': <SiJavascript className="text-foreground" size={16} />,
