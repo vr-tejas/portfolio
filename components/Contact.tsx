@@ -282,7 +282,7 @@ const Contact = () => {
                     className="p-4 bg-green-500/10 border border-green-500/20 rounded-lg"
                   >
                     <p className="text-green-400 text-sm">
-                      Message sent successfully! I'll get back to you soon.
+                      Message sent successfully! I&apos;ll get back to you soon.
                     </p>
                   </motion.div>
                 )}
