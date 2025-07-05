@@ -18,7 +18,7 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
             className="text-white/60 text-lg"
           >
-            Let's build something amazing together
+            Let&apos;s build something amazing together
           </motion.p>
 
           {/* Copyright */}

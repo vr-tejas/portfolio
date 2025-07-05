@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { FiUser, FiDownload, FiExternalLink } from 'react-icons/fi';
+import { FiUser, FiExternalLink } from 'react-icons/fi';
 import { useState, useEffect } from 'react';
 
 const Hero = () => {
@@ -39,7 +39,7 @@ const Hero = () => {
                   transition={{ delay: 0.2 }}
                   className="text-muted text-lg font-medium"
                 >
-                  Hello there, I'm
+                  Hello there, I&apos;m
                 </motion.p>
                 
                 <motion.h1
@@ -79,7 +79,7 @@ const Hero = () => {
                   <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent rounded-lg blur-sm"></div>
                   <div className="relative bg-secondary/50 p-6 rounded-lg border border-white/10">
                     <p className="text-foreground/90 font-medium text-lg italic leading-relaxed">
-                      "Building tomorrow's digital experiences with code, creativity, and innovation"
+                      &ldquo;Building tomorrow&apos;s digital experiences with code, creativity, and innovation&rdquo;
                     </p>
                     <p className="text-muted text-sm mt-3">
                       Passionate about creating impactful solutions ✨
@@ -103,7 +103,7 @@ const Hero = () => {
                   textShadow: '0 0 8px rgba(255,255,255,0.1)'
                 }}
               >
-                I'm a passionate developer specializing in modern web technologies, blockchain solutions, and AI/ML applications. 
+                I&apos;m a passionate developer specializing in modern web technologies, blockchain solutions, and AI/ML applications. 
                 Currently pursuing my degree at RV Institute of Technology and Management while building innovative projects 
                 that solve real-world problems. <span className="text-primary" style={{ fontFamily: 'var(--font-fira-code), var(--font-jetbrains-mono), monospace', fontSize: '1.05rem' }}>Diving deep into Generative AI</span> and exploring its potential in creating intelligent solutions.
               </motion.p>
