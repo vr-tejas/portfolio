@@ -27,7 +27,7 @@ const SocialNavbar = () => {
     },
     { 
       name: 'LeetCode', 
-      url: '#', 
+      url: 'https://leetcode.com/vr tejas', 
       icon: SiLeetcode,
       color: 'hover:text-yellow-400'
     },
