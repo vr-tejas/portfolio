@@ -3,12 +3,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { FiGithub, FiExternalLink, FiCode } from 'react-icons/fi';
+import { FiExternalLink, FiCode } from 'react-icons/fi';
 import { 
   SiReact, SiNextdotjs, SiJavascript, SiHtml5, SiCss3, 
   SiPython, SiTensorflow, SiMysql, SiSolidity, SiEthereum, 
   SiUnity, SiGithubactions, SiNodedotjs, SiExpress, SiMongodb, 
-  SiChartdotjs, SiScikitlearn
+  SiChartdotjs, SiScikitlearn, SiJava
 } from 'react-icons/si';
 import { TbBrandCSharp } from 'react-icons/tb';
 
@@ -42,74 +42,85 @@ const Projects = () => {
     'Neural Networks': <SiTensorflow className="text-foreground" size={16} />,
     'Data Science': <SiPython className="text-foreground" size={16} />,
     'Ganache': <SiEthereum className="text-foreground" size={16} />,
+    'Java': <SiJava className="text-foreground" size={16} />,
+    'P2P': <FiCode className="text-foreground" size={16} />,
+    'Networking': <FiCode className="text-foreground" size={16} />,
+    'AI': <SiPython className="text-foreground" size={16} />,
+    'Blockchain': <SiEthereum className="text-foreground" size={16} />,
+    'Web Development': <SiJavascript className="text-foreground" size={16} />,
+    'Jupyter Notebook': <SiPython className="text-foreground" size={16} />,
   };
 
   const projects = [
     {
       name: 'TradePulse',
-      title: 'Stock Market Trading Platform',
+      title: 'Stock Trading Platform',
       description: 'Full-stack trading platform with real-time data visualization, portfolio tracking, and interactive charts with technical indicators.',
-      tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Chart.js'],
-      github: 'https://github.com/VRTejas/Stock-Market-Trading-Platform',
-      demo: 'https://tradingview.com',
+      tags: ['JavaScript', 'React', 'Node.js', 'Chart.js'],
+      demo: 'https://github.com/vr-tejas/stock-trading-platform',
       gradient: 'from-purple-500/20 to-blue-500/20',
       iconBg: 'bg-purple-500/20',
       icon: <SiReact size={24} className="text-purple-300" />,
     },
     {
       name: 'NeuroDetect',
-      title: 'Parkinson\'s Disease Classification System',
-      description: 'ML-based detection system achieving 93% accuracy for early-stage Parkinson\'s disease detection using voice measurements.',
-      tags: ['Python', 'Machine Learning', 'scikit-learn'],
-      github: 'https://github.com/VRTejas/Parkinsons-Disease-Detection',
-      demo: 'https://www.kaggle.com/datasets/vikasukani/parkinsons-disease-data-set',
+      title: 'Parkinson\'s Disease Prediction',
+      description: 'Machine learning model for early detection of Parkinson\'s disease using voice measurements and advanced ML algorithms.',
+      tags: ['Python', 'Machine Learning', 'Jupyter Notebook'],
+      demo: 'https://github.com/vr-tejas/Parkinsons-Disease-prediction',
       gradient: 'from-green-500/20 to-teal-500/20',
       iconBg: 'bg-green-500/20',
       icon: <SiPython size={24} className="text-green-300" />,
     },
     {
-      name: 'VoteChain',
-      title: 'Blockchain Voting System',
-      description: 'Decentralized voting system with secure smart contracts, voter authentication, and real-time vote tracking.',
-      tags: ['Solidity', 'Ethereum', 'React', 'Truffle'],
-      github: 'https://github.com/VRTejas/Blockchain-Voting-System',
-      demo: 'https://ethereum.org/en/dapps/',
+      name: 'FileShare P2P',
+      title: 'P2P File Sharing System',
+      description: 'Decentralized peer-to-peer file sharing system built with Java, enabling secure and efficient file transfers between users.',
+      tags: ['Java', 'P2P', 'Networking'],
+      demo: 'https://github.com/vr-tejas/P2P-File-Sharing-System',
       gradient: 'from-orange-500/20 to-red-500/20',
       iconBg: 'bg-orange-500/20',
-      icon: <SiEthereum size={24} className="text-orange-300" />,
-    },    
-    {
-      name: 'ForecastPro',
-      title: 'Time Series Forecasting System',
-      description: 'Advanced forecasting system using ensemble methods and macroeconomic indicators with outlier detection and predictive analytics.',
-      tags: ['Python', 'Machine Learning', 'Data Science'],
-      github: 'https://github.com/VRTejas/Time-Series-Forecasting',
-      demo: 'https://plotly.com/python/time-series/',
-      gradient: 'from-blue-500/20 to-cyan-500/20',
-      iconBg: 'bg-blue-500/20',
-      icon: <SiPython size={24} className="text-blue-300" />,
+      icon: <SiJava size={24} className="text-orange-300" />,
     },
     {
       name: 'ReportMaster',
-      title: 'Smart Report Management System',
-      description: 'Automated school report card system with PDF generation, Excel import, and responsive UI built with modern React patterns.',
-      tags: ['Next.js', 'React', 'JavaScript'],
-      github: 'https://github.com/VRTejas/School-Report-Management',
-      demo: 'https://nextjs.org/showcase',
+      title: 'Online Result Management Platform',
+      description: 'Comprehensive platform for managing academic results with automated report generation and student performance analytics.',
+      tags: ['JavaScript', 'Node.js', 'Web Development'],
+      demo: 'https://github.com/vr-tejas/Online-Result-Management-Platform',
       gradient: 'from-indigo-500/20 to-purple-500/20',
       iconBg: 'bg-indigo-500/20',
-      icon: <SiNextdotjs size={24} className="text-indigo-300" />,
+      icon: <SiJavascript size={24} className="text-indigo-300" />,
     },
     {
-      name: 'MuscleMatrix',
-      title: 'Fitness Management System',
-      description: 'Comprehensive workout tracking platform with MySQL integration for routine management and progress monitoring.',
-      tags: ['HTML', 'CSS', 'JavaScript', 'MySQL'],
-      github: 'https://github.com/VRTejas/Fitness-Management-System',
-      demo: 'https://www.myfitnesspal.com',
+      name: 'QuizBot AI',
+      title: 'AI-Powered MCQ Generator',
+      description: 'Intelligent multiple-choice question generator using AI to create educational content and assessments automatically.',
+      tags: ['Python', 'AI', 'Machine Learning'],
+      demo: 'https://github.com/vr-tejas/AI-powered-MCQ-generator',
+      gradient: 'from-cyan-500/20 to-blue-500/20',
+      iconBg: 'bg-cyan-500/20',
+      icon: <SiPython size={24} className="text-cyan-300" />,
+    },
+    {
+      name: 'VoteChain',
+      title: 'Blockchain Voting System',
+      description: 'Decentralized voting system built on blockchain technology ensuring transparency, security, and immutable voting records.',
+      tags: ['JavaScript', 'Blockchain', 'Solidity'],
+      demo: 'https://github.com/vr-tejas/Blockchain-Voting-System',
       gradient: 'from-yellow-500/20 to-amber-500/20',
       iconBg: 'bg-yellow-500/20',
-      icon: <SiMysql size={24} className="text-yellow-300" />,
+      icon: <SiEthereum size={24} className="text-yellow-300" />,
+    },
+    {
+      name: 'ForecastEngine',
+      title: 'ML Forecast Engine',
+      description: 'Advanced machine learning forecasting engine for time series prediction with multiple algorithms and data visualization.',
+      tags: ['Python', 'Machine Learning', 'Data Science'],
+      demo: 'https://github.com/vr-tejas/ml-forecast-engine',
+      gradient: 'from-emerald-500/20 to-green-500/20',
+      iconBg: 'bg-emerald-500/20',
+      icon: <SiPython size={24} className="text-emerald-300" />,
     }
   ];
 
@@ -157,15 +168,6 @@ const Projects = () => {
                     {project.icon}
                   </div>
                   <div className="flex gap-2">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/60 hover:text-white transition-all duration-300 hover:scale-110 cursor-pointer"
-                      aria-label="View code"
-                    >
-                      <FiGithub size={16} />
-                    </a>
                     <a
                       href={project.demo}
                       target="_blank"
@@ -233,7 +235,6 @@ const Projects = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 text-base font-medium text-black bg-primary rounded-full hover:bg-primary-light transition-all duration-300 ease-out hover:shadow-lg hover:shadow-primary/20 hover:scale-105"
           >
-            <FiGithub />
             <span>Visit My GitHub</span>
             <FiExternalLink size={16} />
           </Link>
