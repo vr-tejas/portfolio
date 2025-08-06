@@ -8,7 +8,7 @@ import {
   SiReact, SiNextdotjs, SiJavascript, SiHtml5, SiCss3, 
   SiPython, SiTensorflow, SiMysql, SiSolidity, SiEthereum, 
   SiUnity, SiGithubactions, SiNodedotjs, SiExpress, SiMongodb, 
-  SiChartdotjs, SiScikitlearn, SiJava
+  SiChartdotjs, SiScikitlearn
 } from 'react-icons/si';
 import { TbBrandCSharp } from 'react-icons/tb';
 
@@ -42,7 +42,7 @@ const Projects = () => {
     'Neural Networks': <SiTensorflow className="text-foreground" size={16} />,
     'Data Science': <SiPython className="text-foreground" size={16} />,
     'Ganache': <SiEthereum className="text-foreground" size={16} />,
-    'Java': <SiJava className="text-foreground" size={16} />,
+    'Java': <FiCode className="text-foreground" size={16} />,
     'P2P': <FiCode className="text-foreground" size={16} />,
     'Networking': <FiCode className="text-foreground" size={16} />,
     'AI': <SiPython className="text-foreground" size={16} />,
@@ -80,7 +80,7 @@ const Projects = () => {
       demo: 'https://github.com/vr-tejas/P2P-File-Sharing-System',
       gradient: 'from-orange-500/20 to-red-500/20',
       iconBg: 'bg-orange-500/20',
-      icon: <SiJava size={24} className="text-orange-300" />,
+      icon: <FiCode size={24} className="text-orange-300" />,
     },
     {
       name: 'ReportMaster',
